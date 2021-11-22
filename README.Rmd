@@ -1,0 +1,35 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# rOpenSci Reviews
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+
+## Reviews
+
+- [quishqa/qualR](https://github.com/ropensci/software-review/issues/474)
+
+
+
+## How to start a new review:
+
+```{r eval=FALSE, include=TRUE}
+# Install pkgreviewr
+# remotes::install_github("ropensci-org/pkgreviewr")
+
+# Create the structure for the review
+pkgreviewr::pkgreview_create(pkg_repo = "nameoforg/nameofpackage", 
+                 review_parent = ".")
+```
