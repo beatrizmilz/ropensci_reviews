@@ -1,17 +1,11 @@
 ---
-output:
-    html_notebook:
-        toc: true
-        toc_float: true
-editor_options:
-  chunk_output_type: inline
+output: github_document
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
   out.width = "100%"
@@ -27,8 +21,6 @@ library(devtools)
 
 ### Review Submitted:
 **`r cat(sprintf("**Last updated:** %s", Sys.Date()))`**
-
-***
 
 <br>
 
@@ -134,7 +126,7 @@ devtools::install_github("quishqa/qualR", dependencies = T, build_vignettes = T)
 
 ### run checks on `qualR` source:
 
-```{r check-checks}
+```{r check-checks, eval=FALSE, include=TRUE}
 devtools::check(pkg_dir)
 ```
 
@@ -186,7 +178,7 @@ Ex:
 
 ### run tests on `qualR` source:
 
-```{r check-tests}
+```{r check-tests, eval=FALSE, include=TRUE}
 devtools::test(pkg_dir)
 ```
 
@@ -212,7 +204,7 @@ All the tests passed. But there are only a few tests.
 
 ### check `qualR` for goodpractice:
 
-```{r test-goodpractice}
+```{r test-goodpractice, eval=FALSE, include=TRUE}
 goodpractice::gp(pkg_dir)
 ```
 #### **comments:**
@@ -231,7 +223,7 @@ goodpractice::gp(pkg_dir)
 
 ### spell check
 
-```{r spell-check}
+```{r spell-check, eval=FALSE, include=TRUE}
 devtools::spell_check(pkg_dir)
 ```
 
@@ -249,7 +241,7 @@ online documentation: **<https://quishqa.github.io/qualR/>**
 
 ### test `qualR` function help files:
 
-```{r test-help}
+```{r test-help, eval=FALSE, include=TRUE}
 help(package = "qualR")
 ```
 
@@ -261,7 +253,7 @@ help(package = "qualR")
 
 ### test `qualR` vignettes:
 
-```{r test-vignettes}
+```{r test-vignettes, eval=FALSE, include=TRUE}
 vignette(package = "qualR")
 ```
 
@@ -276,11 +268,11 @@ vignette(package = "qualR")
 - Are there **user interface improvements** that could be made?
 - Are there **performance improvements** that could be made?
 
-```{r free-style}
+```{r free-style, eval=FALSE, include=TRUE}
 library("qualR")
 ```
 
-```{r parse-functions}
+```{r parse-functions, eval=FALSE, include=TRUE}
 exports <-ls("package:qualR")
 exports
 ```
@@ -306,7 +298,7 @@ exports
 - Are there **improvements** that could be made to the [**code style?**](https://ropensci.github.io/dev_guide/building.html#code-style)
 - Is there **code duplication** in the package that should be reduced?
 
-```{r inspect-code}
+```{r inspect-code, eval=FALSE, include=TRUE}
 pkgreviewr::pkgreview_print_source("qualR")
 ```
 **\* might not be suitable for large packages with many exported functions**
@@ -326,7 +318,7 @@ See guidance on [testing](https://ropensci.github.io/dev_guide/building.html#tes
 
 ### test coverage
 
-```{r pkg_coverage}
+```{r pkg_coverage, eval=FALSE, include=TRUE}
 covr::package_coverage(pkg_dir)
 
 ```
