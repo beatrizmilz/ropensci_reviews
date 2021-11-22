@@ -5,9 +5,7 @@
 
 ## **Reviewer:** [@beatrizmilz](https://github.com/beatrizmilz)
 
-### Review Submitted:
-
-------------------------------------------------------------------------
+### Review Submitted: ….
 
 <br>
 
@@ -123,7 +121,7 @@ remove.packages("qualR")
 
 #### **comments:**
 
-> -   @beatrizmilz: The local installation worked.
+The local installation worked. ✨
 
 ------------------------------------------------------------------------
 
@@ -135,7 +133,7 @@ devtools::install_github("quishqa/qualR", dependencies = T, build_vignettes = T)
 
 #### **comments:**
 
-> -   @beatrizmilz: The installation via GitHub worked.
+The installation via GitHub worked. ✨
 
 ## Check package integrity
 
@@ -164,8 +162,6 @@ devtools::check(pkg_dir)
     0 errors ✓ | 1 warning x | 1 note x
 
 #### **comments:**
-
-> -   @beatrizmilz:
 
 The check returned 1 note and 1 warning.
 
@@ -209,7 +205,8 @@ devtools::test(pkg_dir)
 
 #### **comments:**
 
-All the tests passed. But there are only a few tests.
+All the tests passed. There are only a few tests. I recommend the
+authors to write more expectations with `expect_*()`.
 
 ------------------------------------------------------------------------
 
@@ -218,6 +215,38 @@ All the tests passed. But there are only a few tests.
 ``` r
 goodpractice::gp(pkg_dir)
 ```
+
+    ── GP qualR ───────────────────────────────────────────────────────────
+
+    It is good practice to
+
+      ✖ avoid calling setwd(), it changes the global
+        environment. If you need it, consider using on.exit() to
+        restore the working directory.
+
+        tests/testthat/test-CetesbRetrieveParam.R:4:11
+        tests/testthat/test-CetesbRetrieveParam.R:9:3
+        tests/testthat/test-MonitorArRetrieve.R:4:11
+        tests/testthat/test-MonitorArRetrieve.R:7:3
+
+      ✖ fix this R CMD check NOTE: Note: found 40 marked
+        UTF-8 strings
+      ✖ fix this R CMD check WARNING: LaTeX errors when
+        creating PDF version. This typically indicates Rd
+        problems.
+      ✖ fix this R CMD check ERROR: Re-running with no
+        redirection of stdout/stderr. Hmm ... looks like a package
+        Warning in texi2dvi(file = file, pdf = TRUE, clean =
+        clean, quiet = quiet, : texi2dvi script/program not
+        available, using emulation Error in texi2dvi(file = file,
+        pdf = TRUE, clean = clean, quiet = quiet, : pdflatex is
+        not available Warning in texi2dvi(file = file, pdf = TRUE,
+        clean = clean, quiet = quiet, : texi2dvi script/program
+        not available, using emulation Error in texi2dvi(file =
+        file, pdf = TRUE, clean = clean, quiet = quiet, : pdflatex
+        is not available Error in running tools::texi2pdf() You
+        may want to clean up by 'rm -Rf
+        /tmp/RtmpNm3vzd/Rd2pdf3bab53f279cd'
 
 #### **comments:**
 
