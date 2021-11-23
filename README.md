@@ -8,7 +8,11 @@
 
 ## Reviews
 
--   [quishqa/qualR](https://github.com/ropensci/software-review/issues/474)
+-   Package [qualR](https://github.com/quishqa/qualR)
+    -   [Review
+        issue](https://github.com/ropensci/software-review/issues/474)
+    -   [Report of the
+        review](https://github.com/beatrizmilz/ropensci_reviews/blob/main/review-qualR/README.md)
 
 ## How to start a new review:
 
