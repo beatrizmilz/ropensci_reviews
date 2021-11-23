@@ -87,8 +87,8 @@ to improve the package:
 -   I wrote in the report some ideas for the vignettes, but they are
     only suggestions to make it easier for people to use the data.
 
--   Modifing directories using `set.wd()` is not something recommended
-    in the book R Packages ( <https://r-pkgs.org/r.html> )
+-   Modifing directories using `setwd()` is not something recommended in
+    the book R Packages ( <https://r-pkgs.org/r.html> )
 
 Report:
 <https://github.com/beatrizmilz/ropensci_reviews/blob/main/review-qualR/README.md>
