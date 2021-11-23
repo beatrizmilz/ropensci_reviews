@@ -45,10 +45,10 @@ The package includes all the following forms of documentation:
     confirmed.
 -   [x] **Performance:** Any performance claims of the software been
     confirmed.
--   \[-\] **Automated tests:** Unit tests cover essential functions of
-    the package and a reasonable range of inputs and conditions. All
-    tests pass on the local machine.
--   \[-\] **Packaging guidelines**: The package conforms to the rOpenSci
+-   [ ] **Automated tests:** Unit tests cover essential functions of the
+    package and a reasonable range of inputs and conditions. All tests
+    pass on the local machine.
+-   [ ] **Packaging guidelines**: The package conforms to the rOpenSci
     packaging guidelines.
 
 Estimated hours spent reviewing: 6h
