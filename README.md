@@ -9,10 +9,9 @@
 ## Reviews
 
 -   Package [qualR](https://github.com/quishqa/qualR)
-    -   [Review
-        issue](https://github.com/ropensci/software-review/issues/474)
-    -   [Report of the
-        review](https://github.com/beatrizmilz/ropensci_reviews/blob/main/review-qualR/README.md)
+    -   [Issue](https://github.com/ropensci/software-review/issues/474)
+    -   [Report](https://github.com/beatrizmilz/ropensci_reviews/blob/main/review-qualR/README.md)
+    -   [Review](https://github.com/ropensci/software-review/issues/474#issuecomment-981622813)
 
 ## How to start a new review:
 
