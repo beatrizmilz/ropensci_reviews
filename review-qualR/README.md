@@ -5,7 +5,7 @@
 
 ## **Reviewer:** [@beatrizmilz](https://github.com/beatrizmilz)
 
-### Review Submitted: ….
+### Review Submitted: [29/11/2021](https://github.com/ropensci/software-review/issues/474#issuecomment-981622813)
 
 ## Package Review
 
@@ -61,34 +61,33 @@ Estimated hours spent reviewing: 6h
 
 ### Review Comments
 
-Congratulations for this package! I wrote more extensive comments in the
-[full
+I wrote more extensive comments in the [full
 report](https://github.com/beatrizmilz/ropensci_reviews/blob/main/review-qualR/README.md),
 made with `ropensci-org/pkgreviewr`.
 
-Here are some key points that would be interested to work on, in order
-to improve the package:
+Here are some key points that would be interesting to work on, to
+improve the package:
 
 -   Consistent naming styles: it would be better to choose a language
     (English), and a coding style (ex. snake case) and use them in all
-    function names, arguments, and name of columns in the datasets
+    function names, arguments, and names of columns in the datasets
     returned.
 
 -   The tests can be improved. Consider also using GitHub Actions to
-    perform a automated check.
+    perform an automated check.
 
--   Files in the root directory: some of the files does not seems fit to
-    be stored there (such as the files related to the paper), and some
-    needs to be ignored in the build of the package. I wrote in more
-    detail in the report.
+-   Files in the root directory: some of the files do not seem fit to be
+    stored there (such as the files related to the paper), and some need
+    to be ignored in the build of the package. I wrote in more detail in
+    the report.
 
--   The spell check found some typos that could be corrected.
+-   The spell-check found some typos that could be corrected.
 
 -   I wrote in the report some ideas for the vignettes, but they are
     only suggestions to make it easier for people to use the data.
 
--   Modifing directories using `setwd()` is not something recommended in
-    the book R Packages ( <https://r-pkgs.org/r.html> )
+-   Modifying directories using `setwd()` is not something recommended
+    in the book R Packages ( <https://r-pkgs.org/r.html> )
 
 Report:
 <https://github.com/beatrizmilz/ropensci_reviews/blob/main/review-qualR/README.md>
