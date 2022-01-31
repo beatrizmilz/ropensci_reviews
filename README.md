@@ -12,6 +12,11 @@
     -   [Issue](https://github.com/ropensci/software-review/issues/474)
     -   [Report](https://github.com/beatrizmilz/ropensci_reviews/blob/main/review-qualR/README.md)
     -   [Review](https://github.com/ropensci/software-review/issues/474#issuecomment-981622813)
+-   Package
+    [frictionless-r](https://github.com/frictionlessdata/frictionless-r)
+    -   [Issue](https://github.com/ropensci/software-review/issues/495)
+    -   [Report](https://github.com/beatrizmilz/ropensci_reviews/blob/main/frictionless/review.md)
+    -   [Review](https://github.com/ropensci/software-review/issues/495#issuecomment-1025860861)
 
 ## How to start a new review:
 

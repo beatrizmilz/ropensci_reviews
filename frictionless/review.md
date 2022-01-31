@@ -54,19 +54,17 @@ Estimated hours spent reviewing: 3h
 
 ### Review Comments
 
-Congratulations to the authors. Everything worked well. The comments I
-wrote were mostly ideas that seems to be that could improve the user
-experience, but the package looks great as it is. Nice testing suite!
+**Congratulations to the authors. Everything worked well. The comments I
+wrote were mostly ideas that seems to me that could improve the user
+experience, but the package looks great as it is. Nice testing suite!**
 
 #### README
 
 -   In the README, the authors use an abbreviation (FAIR). It might be
     good to clarify what is about (Findability, Accessibility,
-    Interoperability, and Reusability). Also, for readers that are not
-    introduced to the concept of FAIR, what do you think about linking a
-    texto to clarify it? Such as
-    <https://www.nature.com/articles/sdata201618> or
-    <https://www.go-fair.org/fair-principles/>
+    Interoperability, and Reusability) for readers that are not
+    introduced to the concept of FAIR. Also, what do the authors think
+    about linking a text to clarify it?
 
 #### Vignette
 
@@ -78,7 +76,8 @@ experience, but the package looks great as it is. Nice testing suite!
 
 -   Just for the record: When executing `library(frictionless)` there is
     a message saying that
-    `The following object is masked from ‘package:usethis’: create_package`.
+    `The following object is masked from ‘package:usethis’: create_package`:
+    <https://usethis.r-lib.org/reference/create_package.html>
 
 -   There is some examples that are shown using lists. What do the
     authors think about using functions instead, to be more
@@ -86,7 +85,7 @@ experience, but the package looks great as it is. Nice testing suite!
     it instead of `package$resource_names`.
 
 -   Adding the descriptions to the schema does not seem trivial. There
-    is an example with `purrr` package. But the example might be not
+    is an example with the `purrr` package. But the example might be not
     simple to understand if someone is not used to the `purrr` package.
 
 I\`m talking about this piece of code:
@@ -112,8 +111,8 @@ iris_schema$fields <- purrr::imap(
 ```
 
 Do the authors think that it is possible to create a function to add
-descriptions to the schema, in a way that is used in a similar way as
-the other functions of the package? Example of the idea:
+descriptions to the schema, in a way that is used in a similarly to the
+other functions of the package? Example of the idea:
 
 ``` r
 iris_schema <- create_schema(iris) |>
@@ -168,6 +167,11 @@ readr::write_csv(mtcars, "mtcars_zipped.csv.gz")
 file.size("mtcars_zipped.csv.gz")
 #> [1] 558
 ```
+
+I hope the review is usefull. Again, congratulations for the authors.
+
+Full report is here:
+<https://github.com/beatrizmilz/ropensci_reviews/blob/main/frictionless/review.md>
 
 ------------------------------------------------------------------------
 
