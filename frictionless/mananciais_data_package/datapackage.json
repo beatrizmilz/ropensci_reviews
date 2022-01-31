@@ -1,0 +1,49 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "mananciais",
+      "path": "mananciais.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "data",
+            "type": "date"
+          },
+          {
+            "name": "sistema",
+            "type": "string"
+          },
+          {
+            "name": "volume_porcentagem",
+            "type": "number"
+          },
+          {
+            "name": "volume_variacao",
+            "type": "number"
+          },
+          {
+            "name": "volume_operacional",
+            "type": "number"
+          },
+          {
+            "name": "pluviometria_dia",
+            "type": "number"
+          },
+          {
+            "name": "pluviometria_mensal",
+            "type": "number"
+          },
+          {
+            "name": "pluviometria_hist",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ]
+}
